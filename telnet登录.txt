@@ -1,0 +1,62 @@
+光猫被桥接，必须链接光猫的wifi才能登陆后台：192.168.1.1
+
+
+
+启用 Telnet 客户端
+
+方法一：通过控制面板启用
+
+打开 控制面板。
+
+选择 程序。
+
+点击 启用或关闭 Windows 功能。
+
+在弹出的窗口中，找到 Telnet 客户端，勾选它并点击 确定。
+
+打开cmd输入：
+
+telnet 192.168.1.1
+tc login：admin
+password：s2@We3%Dc#
+
+出现#时，输入：
+cat /tmp/ctromfile.cfg | grep 'user'
+
+会出现：
+# cat /tmp/ctromfile.cfg | grep 'user'
+        <Entry0 Active="Yes" username="CMCCAdmin" web_passwd="SxD4AjE6@F"
+        <Entry1 Active="Yes" username="user" web_passwd=""
+        <Entry2 Active="Yes" username="user3" web_passwd="1234"
+        <TelnetEntry Active="Yes" telnet_username="admin"
+        <ConsoleEntry Active="Yes" console_username="admin"
+userInterfaceAttr="AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAASEhIV"
+retryTimes="0" retryLimit="10" userName="" userPasswordDEV=""
+        <Downloading username="N/A" password="N/A" url="N/A" port="N/A"
+
+超级管理员账户：CMCCAdmin
+即本次超级密码是：SxD4AjE6@F
+
+历次密码：
+Sx3YW5jAd^
+SxwrT!A7BK
+Sx#h2Zu2Gx
+Sxx@115JAX
+SxK4w%U!ev
+Sx@u%3p3AU
+Sxd#wtH2B4
+
+光猫：
+192.168.1.1
+
+D191G:
+192.168.1.2
+
+D126:
+192.168.1.3
+
+D191G厨房：
+192.168.1.4
+
+
+2_INTERNET_R_VID_41
